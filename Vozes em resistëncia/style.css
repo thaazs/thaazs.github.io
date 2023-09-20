@@ -19,9 +19,9 @@
     --corpo-titulo: 'raleway', sans-serif;
 }
 .conteudo {
-    max-width: 1350px; /* Largura máxima da div de conteúdo */
-    margin: 0 auto; /* Centraliza a div horizontalmente */
-    background-color: var(--cinza); /* Cor de fundo da div de conteúdo */
+    max-width: 1350px; 
+    margin: 0 auto; 
+    background-color: var(--cinza); 
 }
 *{
     margin: 0;
@@ -29,15 +29,15 @@
 }
 .esquerda-table {
     width: 50%;
-    padding: 20px; /* Adicione espaço interno à esquerda */
-    box-sizing: border-box; /* Garante que o espaço interno não aumente a largura */
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 /* Estilos para posicionar elementos à direita */
 .direita-table {
     width: 50%;
-    text-align: right; /* Alinha o texto à direita */
-    padding: 20px; /* Adicione espaço interno à direita */
-    box-sizing: border-box; /* Garante que o espaço interno não aumente a largura */
+    text-align: right; 
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 .direita-table img {
     display: block;
@@ -91,9 +91,9 @@ body{
     display: flex;
     gap: 70px;
     justify-content: center;
-    align-items: center; /* Opcional: centralize verticalmente */
+    align-items: center; 
     background-color: var(--preto2);
-    height: 110px; /* Defina uma altura para o cabeçalho */
+    height: 110px; 
 }
 .cabecalho__menu__link{
     font-family: var(--corpo-titulo);
@@ -199,7 +199,7 @@ body{
     justify-content: center;
     text-align: center;
     position: relative;
-    margin-right: 35px; /* Adicione margem direita */
+    margin-right: 35px; 
     transition: opacity 0.3s;
 }
 .retangulo img {
