@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'raleway';
+    src: url(Raleway/static/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: 'nimbus';
+    src: url(fontes/TAN_Nimbus/Nimbus.ttf);
+}
+  :root {
+    --cinza: #141414;
+    --marrom: #523A2E;
+    --preto: #000000;
+    --verde: #496428;
+    --azul: #346D92; 
+    --vermelho: #8B111B;
+    --branco: #fafafa;
+
+    --fontespeciais: 'nimbus', sans-serif;
+    --corpo-titulo: 'raleway', sans-serif;
+}
+.conteudo {
+    max-width: 1350px; /* Largura máxima da div de conteúdo */
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+    background-color: var(--cinza); /* Cor de fundo da div de conteúdo */
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.esquerda-table {
+    width: 50%;
+    padding: 20px; /* Adicione espaço interno à esquerda */
+    box-sizing: border-box; /* Garante que o espaço interno não aumente a largura */
+}
+/* Estilos para posicionar elementos à direita */
+.direita-table {
+    width: 50%;
+    text-align: right; /* Alinha o texto à direita */
+    padding: 20px; /* Adicione espaço interno à direita */
+    box-sizing: border-box; /* Garante que o espaço interno não aumente a largura */
+}
+.direita-table img {
+    display: block;
+    margin: 0 auto; 
+    width: 85%;
+    height: 85%;
+}
+footer {
+    background-color: var(--preto);
+    text-align: center;
+    height: 90px;
+    align-items: center;
+    margin-top: 10px;
+}
+  
+h1{
+    font-family: var(--corpo-titulo);
+    font-size: 28px;
+    margin-top: 20px; 
+    margin-right: 25px; 
+    margin-bottom: 20px; 
+    margin-left: 25px;
+}
+h2{
+    font-family: var(--corpo-titulo);
+    margin-top: 20px; 
+    margin-right: 25px; 
+    margin-bottom: 20px; 
+    margin-left: 25px;
+}
+p{
+    font-family: var(--corpo-titulo);
+    font-size: 22px;
+    margin-top: 20px; 
+    margin-right: 25px; 
+    margin-bottom: 20px; 
+    margin-left: 25px; 
+    text-align: justify;
+}
+header {
+    background-color: var(--preto);
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--preto);
+    color: var(--branco);
+    margin: 0;
+    padding: 0;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center; /* Opcional: centralize verticalmente */
+    background-color: var(--preto2);
+    height: 110px; /* Defina uma altura para o cabeçalho */
+}
+.cabecalho__menu__link{
+    font-family: var(--corpo-titulo);
+    font-size: 20px;
+    color: var(--branco);
+    text-decoration: none;
+}
+.home-destaque{
+    color: var(--vermelho);
+}
+.destaque-fonte{
+    font-family: var(--fontespeciais);
+    text-transform: uppercase;
+}
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--fontespeciais);
+
+    font-size: 22px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: var(--vermelho);
+    width: 360px;
+    text-align: center;
+    border-radius: 35px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--branco);
+    font-family: var(--corpo-titulo);
+    transition: box-shadow 0.3s ease;
+}
+.apresentacao__links__link:hover {
+    background-color: #531016;
+    color: var(--vermelho);
+}
+.img-fundo {
+    background-image: url(imgs/home/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px; 
+}
+/*carrosel do home*/
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #799955;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.dot.active {
+    background-color: #49642A;
+}
+/*links para outras páginas no home*/
+.paginas {
+    margin-left: 9%;
+    margin-top: 30px;
+}
+.retangulo {
+    width: 250px;
+    height: 300px;
+    background-color: var(--verde);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-right: 35px; /* Adicione margem direita */
+    transition: opacity 0.3s;
+}
+.retangulo img {
+    max-width: 90%; 
+    max-height: 90%; 
+    border-radius: 10%;
+}
+.retangulo:hover{
+    opacity: 50%;
+}
+.link {
+    text-decoration: none; 
+    color: var(--branco); 
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    font-family: var(--fontespeciais);
+    position: absolute;
+    bottom: 10px;
+}
+.link:hover{
+    color: #707070;
+}
+/*efeito parallax e página 3*/
+.parallax-img{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(imgs/territorio/img1.jpg);
+    opacity: 50%;
+    margin: 0;
+    padding: 0;
+}
+.parallax-img2{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(imgs/territorio/img2.jpg);
+    opacity: 50%;
+    margin: 0;
+    padding: 0;
+}
+.parallax-content {
+    background-color: var(--verde);
+    color: var(--branco);
+}
+.parallax{
+    background-color: var(--verde);
+}
+.parallax-text , .parallax-text2{
+    opacity: 100%;
+}
+.pl:hover{
+    background-color: var(--marrom);
+}
+.pl:visited{
+    color: var(--branco);
+}
+.pl:active{
+    color: var(--vermelho);
+}
+.pl:link {
+    color: var(br);
+}
+/*PARALLAX PAGINA 4 POLÍTICA*/
+.parallax-img21{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(imgs/política/p&b/images\ \(79\).jpeg);
+    opacity: 40%;
+    margin: 0;
+    padding: 0;
+}
+.parallax-img22{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(imgs/política/p&b/images\ \(87\).jpeg);
+    opacity: 40%;
+    margin: 0;
+    padding: 0;
+}
+.parallax-img23{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(imgs/política/p&b/images\ \(88\).jpeg);
+    opacity: 40%;
+    margin: 0;
+    padding: 0;
+}
+.parallax-img24{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(imgs/política/p&b/images\ \(89\).jpeg);
+    opacity: 40%;
+    margin: 0;
+    padding: 0;
+}
+.parallax-content2 {
+    background-color: var(--cinza);
+    color: var(--branco);
+}
+.parallax2{
+    background-color: var(--cinza);
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
+.text-box {
+    text-align: center;
+    font-family: 'raleway';
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 80%; 
+    max-width: 90%; 
+    padding: 5px;
+    transform: translateX(-50%);
+    background-color: var(--verde);
+    color: var(var(--branco));
+    padding: 8px 16px;
+    border-radius: 8px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+} 
+.image-container:hover .text-box {
+    opacity: 1;
+}
+.datas-movimento {
+    background-color:var(--vermelho);
+}
+
+
