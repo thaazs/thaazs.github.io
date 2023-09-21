@@ -27,24 +27,39 @@
     margin: 0;
     padding: 0;
 }
-.esquerda-table {
-    width: 50%;
-    padding: 20px; 
-    box-sizing: border-box; 
+#início {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Distribui o espaço horizontalmente */
 }
-/* Estilos para posicionar elementos à direita */
-.direita-table {
-    width: 50%;
-    text-align: right; 
-    padding: 20px; 
-    box-sizing: border-box; 
+
+.apresentacao__conteudo {
+    flex: 1; /* Cresce para ocupar todo o espaço disponível */
+    padding: 20px; /* Espaçamento para o conteúdo */
 }
-.direita-table img {
-    display: block;
+.apresentacao__conteudo__titulo {
+    font-family: var(--fontespeciais);
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.titulo-destaque {
+    font-family: var(--fontespeciais);
+    font-size: 28px;
+    text-transform: uppercase;
+    color: var(--vermelho);
+}
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.imagemi {
+    max-width: 48%;
+    height: auto;
+    display: block; /* Remove espaço extra abaixo da imagem */
     margin: 0 auto; 
-    width: 85%;
-    height: 85%;
 }
+
 footer {
     background-color: var(--preto);
     text-align: center;
@@ -185,10 +200,14 @@ body{
 }
 /*links para outras páginas no home*/
 .paginas {
-    margin-left: 9%;
+    margin-left: 4%;
     margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de largura igual */
+    gap: 10px; /* Espaço entre os elementos */
 }
 .retangulo {
+    padding: 10px;
     width: 250px;
     height: 300px;
     background-color: var(--verde);
