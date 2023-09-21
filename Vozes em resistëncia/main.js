@@ -54,17 +54,3 @@ createDots();
 showImage(counter);
 let autoSlideInterval = setInterval(nextSlide, slideInterval);
 
-/*texto que aparece quando passa o mouse na imagem*/
-  const imageContainer = document.querySelector(".image-container");
-  const textBox = document.querySelector(".text-box");
-
-  imageContainer.addEventListener("mouseover", () => {
-    textBox.style.display = "block";
-  });
-
-  imageContainer.addEventListener("mouseout", () => {
-    textBox.style.display = "none";
-  });
-
-
-

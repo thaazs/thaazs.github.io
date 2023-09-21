@@ -346,38 +346,65 @@ body{
 .parallax2{
     background-color: var(--cinza);
 }
+.politician-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.politician-card {
+    text-align: center;
+}
+
 .image-container {
     position: relative;
     display: inline-block;
 }
+
 .image-container img {
     max-width: 80%;
     height: auto;
     border-radius: 20px;
 }
-.text-box {
-    text-align: center;
-    font-family: 'raleway';
+
+.politician-description {
+    text-align: left;
+    font-family: var(--corpo-titulo);
     font-size: 20px;
     position: absolute;
     bottom: 10px;
     left: 50%;
-    width: 80%; 
-    max-width: 90%; 
+    width: 80%;
+    max-width: 90%;
     padding: 5px;
     transform: translateX(-50%);
     background-color: var(--verde);
-    color: var(var(--branco));
+    color: var(--branco);
     padding: 8px 16px;
     border-radius: 8px;
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-} 
-.image-container:hover .text-box {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .politician-description {
     opacity: 1;
 }
+
+.politician-name {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
 .datas-movimento {
     background-color:var(--vermelho);
+}
+/* Adicione uma media query para layouts responsivos */
+@media screen and (max-width: 768px) {
+    .politician-grid {
+        grid-template-columns: 1fr; /* Uma única coluna */
+    }
 }
 
 
