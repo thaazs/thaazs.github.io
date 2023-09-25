@@ -402,6 +402,47 @@ body{
 }
 /* Adicione uma media query para layouts responsivos */
 @media screen and (max-width: 768px) {
+    .conteudo{
+        max-width: 95%;
+    }
+    #início {
+        display: block;
+    }
+    .apresentacao__conteudo {
+        padding: 20px; /* Espaçamento para o conteúdo */
+        display: flex; /* Tornar o conteúdo um contêiner flexível */
+        flex-direction: column; /* Empilhar elementos verticalmente */
+        align-items: center; /* Alinha verticalmente no centro */
+    }
+    
+    .apresentacao__conteudo__titulo {
+        font-family: var(--fontespeciais);
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    
+    .imagemi {
+        width: 100%; /* Ocupa 100% da largura disponível */
+        height: auto; /* Mantém a proporção da imagem */
+        display: block; /* Remove espaço extra abaixo da imagem */
+    }
+    .paginas {
+        margin-left: 4%;
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+    .retangulo{
+        width: 125px;
+        height: 150px;
+    }
+    .retangulo img {
+        max-width: 90%; 
+        max-height: 90%; 
+        border-radius: 10%;
+    }
+    .link {
+        font-size: 10px;
+    }
     .politician-grid {
         grid-template-columns: 1fr; /* Uma única coluna */
     }
