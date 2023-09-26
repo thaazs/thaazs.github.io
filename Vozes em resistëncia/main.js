@@ -54,3 +54,8 @@ createDots();
 showImage(counter);
 let autoSlideInterval = setInterval(nextSlide, slideInterval);
 
+function toggleMenu() {
+    var menuLinks = document.querySelector(".menu-links");
+    menuLinks.classList.toggle("active");
+}
+

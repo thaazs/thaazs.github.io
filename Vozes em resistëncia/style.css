@@ -29,13 +29,17 @@
 }
 #início {
     display: flex;
-    align-items: center; /* Alinha verticalmente no centro */
-    justify-content: space-between; /* Distribui o espaço horizontalmente */
+    align-items: center;
+    justify-content: space-between;
 }
-
+.apresentacao {
+    display: flex;
+    flex-wrap: wrap;
+}
 .apresentacao__conteudo {
-    flex: 1; /* Cresce para ocupar todo o espaço disponível */
-    padding: 20px; /* Espaçamento para o conteúdo */
+    flex: 1;
+    max-width: 48%; /* Largura máxima para duas colunas no desktop */
+    padding: 20px;
 }
 .apresentacao__conteudo__titulo {
     font-family: var(--fontespeciais);
@@ -54,12 +58,9 @@
     gap: 10px;
 }
 .imagemi {
-    max-width: 48%;
+    max-width: 48%; /* Largura máxima para duas colunas no desktop */
     height: auto;
-    display: block; /* Remove espaço extra abaixo da imagem */
-    margin: 0 auto; 
 }
-
 footer {
     background-color: var(--preto);
     text-align: center;
@@ -116,6 +117,24 @@ body{
     color: var(--branco);
     text-decoration: none;
 }
+.cabecalho__menu__link__img{
+    height: 100px;
+    width: 100%;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.menu-links {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--preto);
+    height: 110px;
+}
 .home-destaque{
     color: var(--vermelho);
 }
@@ -161,7 +180,7 @@ body{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 500px; 
+    height: 100%; 
 }
 /*carrosel do home*/
 .carousel-container {
@@ -405,26 +424,17 @@ body{
     .conteudo{
         max-width: 95%;
     }
-    #início {
-        display: block;
+    .apresentacao{
+        flex-direction: column-reverse; /* Empilha os elementos verticalmente */
     }
-    .apresentacao__conteudo {
-        padding: 20px; /* Espaçamento para o conteúdo */
-        display: flex; /* Tornar o conteúdo um contêiner flexível */
-        flex-direction: column; /* Empilhar elementos verticalmente */
-        align-items: center; /* Alinha verticalmente no centro */
+    .apresentacao__conteudo,
+    .imagemi {
+        max-width: 100%; /* Largura máxima de 100% em telas menores */
     }
-    
     .apresentacao__conteudo__titulo {
         font-family: var(--fontespeciais);
         font-size: 28px;
         text-transform: uppercase;
-    }
-    
-    .imagemi {
-        width: 100%; /* Ocupa 100% da largura disponível */
-        height: auto; /* Mantém a proporção da imagem */
-        display: block; /* Remove espaço extra abaixo da imagem */
     }
     .paginas {
         margin-left: 4%;
@@ -432,8 +442,8 @@ body{
         grid-template-columns: 1fr; 
     }
     .retangulo{
-        width: 125px;
-        height: 150px;
+        width: 200px;
+        height: 250px;
     }
     .retangulo img {
         max-width: 90%; 
@@ -445,6 +455,32 @@ body{
     }
     .politician-grid {
         grid-template-columns: 1fr; /* Uma única coluna */
+    }
+    .cabecalho__menu{
+        justify-content: left;
+    }  
+    .menu-icon {
+        display: block;
+    }
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        height: 0; /* Definimos a altura inicial como 0 para ocultar o menu */
+        overflow: hidden; /* Oculta qualquer conteúdo que não caiba na altura definida */
+        transition: height 0.3s;
+        background-color: var(--preto);
+        text-align: center;
+    }
+    .menu-links a:last-child {
+        margin-bottom: 20px; 
+    }
+    .menu-links.active {
+        display: flex;
+        height: auto;
     }
 }
 
