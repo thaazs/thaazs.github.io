@@ -45,6 +45,8 @@
     font-family: var(--fontespeciais);
     font-size: 28px;
     text-transform: uppercase;
+    width: 50%; 
+    margin-bottom: 0px;
 }
 .titulo-destaque {
     font-family: var(--fontespeciais);
@@ -432,32 +434,29 @@ body{
         max-width: 100%; /* Largura máxima de 100% em telas menores */
     }
     .apresentacao__conteudo__titulo {
-        font-family: var(--fontespeciais);
-        font-size: 28px;
-        text-transform: uppercase;
+        width: auto;
+        font-size: 26px;
     }
     .paginas {
-        margin-left: 4%;
+        margin-left: 15%;
+        justify-content: center; 
         display: grid;
         grid-template-columns: 1fr; 
     }
     .retangulo{
-        width: 200px;
-        height: 250px;
+        margin-bottom: 10px;
     }
     .retangulo img {
         max-width: 90%; 
         max-height: 90%; 
         border-radius: 10%;
     }
-    .link {
-        font-size: 10px;
-    }
     .politician-grid {
         grid-template-columns: 1fr; /* Uma única coluna */
     }
     .cabecalho__menu{
         justify-content: left;
+        height: 80px;
     }  
     .menu-icon {
         display: block;
