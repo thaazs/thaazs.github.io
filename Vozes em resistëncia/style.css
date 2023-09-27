@@ -60,8 +60,11 @@
     gap: 10px;
 }
 .imagemi {
-    max-width: 48%; /* Largura máxima para duas colunas no desktop */
+    max-width: 33%; /* Largura máxima para duas colunas no desktop */
     height: auto;
+    position: absolute;
+    top: 5%;
+    left: 50%;
 }
 footer {
     background-color: var(--preto);
@@ -120,7 +123,7 @@ body{
     text-decoration: none;
 }
 .cabecalho__menu__link__img{
-    height: 100px;
+    height: 80px;
     width: 100%;
 }
 .menu-icon {
@@ -421,17 +424,63 @@ body{
 .datas-movimento {
     background-color:var(--vermelho);
 }
+.imagens-datas1{
+    background-image: url(imgs/política/p&b/3.jpg);
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.texto-datas1{
+    opacity: 100%;
+    width: 50%;
+    background-color: #6b1219;
+    margin-left: 2%;
+    border-radius: 15px;
+}
+.imagens-datas2{
+    background-image: url(imgs/política/p&b/3.jpg);
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.texto-datas2{
+    opacity: 100%;
+    width: 50%;
+    background-color: #6b1219;
+    margin-left: 48%;
+    border-radius: 15px;
+}
+.imagens-datas3{
+    background-image: url(imgs/política/p&b/3.jpg);
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.texto-datas3{
+    opacity: 100%;
+    width: 50%;
+    background-color: #6b1219;
+    margin-left: 2%;
+    border-radius: 15px;
+}
 /* Adicione uma media query para layouts responsivos */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     .conteudo{
         max-width: 95%;
     }
     .apresentacao{
         flex-direction: column-reverse; /* Empilha os elementos verticalmente */
     }
-    .apresentacao__conteudo,
-    .imagemi {
+    .apresentacao__conteudo {
         max-width: 100%; /* Largura máxima de 100% em telas menores */
+    }
+    .imagemi{
+        position: relative;
+        width: 500px;
+        height: auto;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
     }
     .apresentacao__conteudo__titulo {
         width: auto;
@@ -465,7 +514,7 @@ body{
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 110px;
+        top: 80px;
         left: 0;
         width: 100%;
         height: 0; /* Definimos a altura inicial como 0 para ocultar o menu */
@@ -481,6 +530,11 @@ body{
         display: flex;
         height: auto;
     }
+    .texto-datas1, .texto-datas2, .texto-datas3{
+        width: 90%;
+        background-color: rgba(107, 18, 25, 0.8);
+        margin: 0 auto;
+   }
 }
 
 
