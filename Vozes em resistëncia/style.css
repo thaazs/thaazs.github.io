@@ -27,6 +27,14 @@
     margin: 0;
     padding: 0;
 }
+.linha{
+    background-color: var(--vermelho);
+    margin-left: 25px;
+    height: 5px;
+    width: 200px;
+    border-radius: 10%;
+    margin-top: -15px;
+}
 #início {
     display: flex;
     align-items: center;
@@ -289,14 +297,61 @@ body{
     align-items: center;
 }
 .circulo_e {
-    display: block;
     margin-right: 20px;
+    margin-left: -100px;
+    z-index: 100;
+
 }
 .circulo_e img{
     margin-right:50%;
     width: 750px;
     height: auto;
     border-radius: 50%;
+}
+/* pãgina 2 influencias */
+.inicio_influencias {
+    
+    margin-bottom: 50px;
+    background-image: url(imgs/home/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo_inicio_influencia{
+    font-family: var(--fontespeciais);
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.linha_inicio{
+    background-color: var(--vermelho);
+    height: 5px;
+    width: 260px;
+    border-radius: 10%;
+    margin-top: -15px;
+}
+.texto_inicio_infuencia{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+.culinaria , .higiene{
+    display: flex;
+    margin-top: 40px;
+}
+.culinaria img , .higiene img{
+    border-radius: 8%;
+    width: 50%;
+    height: auto;
+    margin: 30px;
+}
+.culinaria:hover , .higiene:hover {
+    background-color: #531016;
 }
 /*CARROSSEL e página 3*/
 .biomas {
