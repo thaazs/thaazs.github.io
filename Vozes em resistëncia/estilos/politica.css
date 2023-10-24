@@ -160,8 +160,8 @@ body{
     align-items: center;
 }
 .titulo_inicio_politica{
-    font-family: var(--fontespeciais);
-    font-size: 44px;
+    font-family: var(--corpo-titulo);
+    font-size: 48px;
     text-align: center;
     margin-bottom: 35px;
 }
@@ -171,6 +171,95 @@ body{
     width: 260px;
     border-radius: 10%;
     margin-top: -15px;
+}
+
+/*politica e datas*/
+.politician-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.politician-card {
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
+.politician-description {
+    text-align: left;
+    font-family: var(--corpo-titulo);
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 80%;
+    max-width: 90%;
+    padding: 5px;
+    transform: translateX(-50%);
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 8px 16px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.image-container:hover .politician-description {
+    opacity: 1;
+}
+.politician-name {
+    font-size: 24px;
+    margin-top: 10px;
+}
+.datas-movimento {
+    background-color:var(--vermelho);
+}
+.imagens-datas1{
+    background-image: url(imgs/home/img2.jpg);
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.texto-datas1{
+    opacity: 100%;
+    width: 50%;
+    background-color: #6b1219;
+    margin-left: 2%;
+    border-radius: 15px;
+}
+.imagens-datas2{
+    background-image: url(imgs/home/img2.jpg);
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.texto-datas2{
+    opacity: 100%;
+    width: 50%;
+    background-color: #6b1219;
+    margin-left: 48%;
+    border-radius: 15px;
+}
+.imagens-datas3{
+    background-image: url(imgs/home/img2.jpg);
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.texto-datas3{
+    opacity: 100%;
+    width: 50%;
+    background-color: #6b1219;
+    margin-left: 2%;
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 820px) {
@@ -204,4 +293,12 @@ body{
         display: flex;
         height: auto;
     }
+    .politician-grid {
+        grid-template-columns: 1fr; /* Uma única coluna */
+    }
+    .texto-datas1, .texto-datas2, .texto-datas3{
+        width: 90%;
+        background-color: rgba(107, 18, 25, 0.8);
+        margin: 0 auto;
+   }
 }

@@ -145,7 +145,54 @@ body{
     height: auto;
     border-radius: 50%;
 }
+/* fim das configuraçòes padrões */
 
+.inicio_movimento {
+    margin-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo_inicio_movimento {
+    font-family: var(--corpo-titulo);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.linha_inicio{
+    background-color: var(--vermelho);
+    height: 5px;
+    width: 260px;
+    border-radius: 10%;
+    margin-top: -15px;
+}
+.influencia_sociocultural{
+    display: flex;
+    margin-top: 40px;
+}
+.influencia_sociocultural img {
+    border-radius: 8%;
+    width: 50%;
+    height: auto;
+    margin: 30px;
+}
+#importancia{
+    margin-top: 50px;
+    margin-bottom: 110px;
+}
+.importancia{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.consideracoes {
+    margin-top: 500px;
+}
 @media screen and (max-width: 820px) {
     .conteudo{
         max-width: 95%;

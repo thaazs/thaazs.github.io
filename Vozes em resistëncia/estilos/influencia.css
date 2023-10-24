@@ -159,8 +159,8 @@ body{
     align-items: center;
 }
 .titulo_inicio_influencia{
-    font-family: var(--fontespeciais);
-    font-size: 44px;
+    font-family: var(--corpo-titulo);
+    font-size: 50px;
     text-align: center;
     margin-bottom: 35px;
 }
@@ -175,16 +175,6 @@ body{
     font-size: 30px;
     text-align: center;
     margin-top: 35px;
-}
-.culinaria , .higiene{
-    display: flex;
-    margin-top: 40px;
-}
-.culinaria img , .higiene img{
-    border-radius: 8%;
-    width: 50%;
-    height: auto;
-    margin: 30px;
 }
 .culinaria:hover , .higiene:hover {
     background-color: #531016;

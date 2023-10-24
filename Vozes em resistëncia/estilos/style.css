@@ -158,14 +158,14 @@ body{
     padding: 20px;
 }
 .apresentacao__conteudo__titulo {
-    font-family: var(--fontespeciais);
+    font-family: var(--corpo-titulo);
     font-size: 28px;
     text-transform: uppercase;
     width: 50%; 
     margin-bottom: 0px;
 }
 .titulo-destaque {
-    font-family: var(--fontespeciais);
+    font-family: var(--corpo-titulo);
     font-size: 28px;
     text-transform: uppercase;
     color: var(--vermelho);
@@ -186,7 +186,7 @@ body{
     left: 50%;
 }
 .destaque-fonte{
-    font-family: var(--fontespeciais);
+    font-family: var(--corpo-titulo);
     text-transform: uppercase;
 }
 .apresentacao__links{
@@ -197,7 +197,7 @@ body{
     gap: 32px;
 }
 .apresentacao__links__subtitulo{
-    font-family: var(--fontespeciais);
+    font-family: var(--corpo-titulo);
 
     font-size: 22px;
     margin-top: 10px;
@@ -268,7 +268,7 @@ body{
 
 /*links para outras páginas no home*/
 .titulo-paginas{
-    font-family: var(--fontespeciais);
+    font-family: var(--corpo-titulo);
     font-size: 22px;
 }
 .paginas {
@@ -308,7 +308,7 @@ body{
     margin-left: 5px;
     margin-right: 5px;
     font-size: 20px;
-    font-family: var(--fontespeciais);
+    font-family: var(--corpo-titulo);
     position: absolute;
     bottom: 10px;
 }
