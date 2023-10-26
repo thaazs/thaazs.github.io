@@ -133,6 +133,7 @@ body{
     display: flex;
     align-items: center;
 }
+/*alterado especcificamente para o tamanho do texto dessa parte*/
 .circulo_e {
     margin-right: 20px;
     margin-left: -100px;
@@ -145,6 +146,7 @@ body{
     height: auto;
     border-radius: 50%;
 }
+/*alterado especcificamente para o tamanho do texto dessa parte*/
 
 /*início*/
 .inicio_politica {
@@ -231,7 +233,7 @@ body{
 .texto-datas1{
     opacity: 100%;
     width: 50%;
-    background-color: #6b1219;
+    background-color: var(--vermelho);
     margin-left: 2%;
     border-radius: 15px;
 }
@@ -244,7 +246,7 @@ body{
 .texto-datas2{
     opacity: 100%;
     width: 50%;
-    background-color: #6b1219;
+    background-color: var(--vermelho);
     margin-left: 48%;
     border-radius: 15px;
 }
@@ -257,7 +259,7 @@ body{
 .texto-datas3{
     opacity: 100%;
     width: 50%;
-    background-color: #6b1219;
+    background-color: var(--vermelho);
     margin-left: 2%;
     border-radius: 15px;
 }

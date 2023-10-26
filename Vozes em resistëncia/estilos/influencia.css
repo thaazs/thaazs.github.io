@@ -176,6 +176,16 @@ body{
     text-align: center;
     margin-top: 35px;
 }
+.culinaria , .higiene{
+    display: flex;
+    margin-top: 40px;
+}
+.culinaria img , .higiene img{
+    border-radius: 8%;
+    width: 50%;
+    height: auto;
+    margin: 30px;
+}
 .culinaria:hover , .higiene:hover {
     background-color: #531016;
 }

@@ -145,6 +145,77 @@ body{
     height: auto;
     border-radius: 50%;
 }
+/* fim das configurações padrao */
+.inicio_territorio {
+    margin-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo_inicio_territorio{
+    font-family: var(--corpo-titulo);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.linha_inicio{
+    background-color: var(--vermelho);
+    height: 5px;
+    width: 260px;
+    border-radius: 10%;
+    margin-top: -15px;
+}
+.texto_inicio_territorio{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+.locais{
+    margin-top: -200px;
+    margin-bottom: 80px;
+}
+.locais_1{
+    display: flex;
+    gap: 50px;
+    margin-left: 7.5%
+}
+.local1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.locais_2{
+    display: flex;
+    gap: 50px;
+    margin-left: 20%;
+    margin-top: 25px;
+}
+.demarcacao_img {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 100px;
+}
+.pl_490{
+    display: flex;
+    margin-top: 40px;
+    background-color: var(--vermelho);
+}
+.pl__490{
+    margin-top: 40px;
+    background-color: var(--vermelho);
+}
+.pl_490 img {
+    border-radius: 8%;
+    width: 50%;
+    height: auto;
+    margin: 30px;
+}
 
 @media screen and (max-width: 820px) {
     .conteudo{
