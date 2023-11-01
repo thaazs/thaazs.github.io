@@ -157,27 +157,6 @@ body{
     max-width: 48%; /* Largura máxima para duas colunas no desktop */
     padding: 20px;
 }
-.apresentacao__conteudo__titulo {
-    font-family: var(--corpo-titulo);
-    font-size: 28px;
-    text-transform: uppercase;
-    width: 50%; 
-    margin-bottom: 0px;
-}
-.titulo-destaque {
-    font-family: var(--corpo-titulo);
-    font-size: 28px;
-    text-transform: uppercase;
-    color: var(--vermelho);
-}
-.apresentacao__conteudo__texto{
-    text-align: left;
-}
-.apresentacao__links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 .imagemi {
     max-width: 33%; /* Largura máxima para duas colunas no desktop */
     height: auto;
@@ -189,30 +168,31 @@ body{
     font-family: var(--corpo-titulo);
     text-transform: uppercase;
 }
-.apresentacao__links{
+.apresentacao__links__botao{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 20px;
+    width: 75%;
+    margin-left: 25px;
 }
 .apresentacao__links__subtitulo{
     font-family: var(--corpo-titulo);
-
-    font-size: 22px;
+    font-size: 25px;
+    margin-left: 25px;
     margin-top: 10px;
-    text-transform: uppercase;
 }
 .apresentacao__links__link{
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 10px;
     background-color: var(--vermelho);
-    width: 360px;
+    width: 250px;
     text-align: center;
     border-radius: 35px;
-    font-size: 24px;
-    padding: 21.5px 0;
+    font-size: 20px;
+    padding: 15px 0;
     text-decoration: none;
     color: var(--branco);
     font-family: var(--corpo-titulo);
@@ -221,6 +201,20 @@ body{
 .apresentacao__links__link:hover {
     background-color: #531016;
     color: var(--vermelho);
+}
+.inicio-fundo{
+    height: 650px;
+
+}
+.circulo-titulo{
+    width: 450px;
+    height: 450px;
+    background-color: var(--vermelho);
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* conteúdo introdutório */
@@ -269,7 +263,7 @@ body{
 /*links para outras páginas no home*/
 .titulo-paginas{
     font-family: var(--corpo-titulo);
-    font-size: 22px;
+    font-size: 24px;
 }
 .paginas {
     margin-left: 4%;
