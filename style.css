@@ -1,61 +1,73 @@
-.card {
-    width: 800px;
-    height: 800px;
-    perspective: 1000px;
-    border-radius: 50%;
+h1{
+    font-family: var(--corpo-titulo);
+    font-size: 28px;
+    margin-top: 20px; 
+    margin-right: 25px; 
+    margin-bottom: 20px; 
+    margin-left: 25px;
 }
-
-.card-inner {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
+p{
+    font-family: var(--corpo-titulo);
+    font-size: 20px;
+    margin-top: 20px; 
+    margin-right: 25px; 
+    margin-bottom: 20px; 
+    margin-left: 25px; 
+    text-align: justify;
+}
+.cabecalho__menu__link{
+    font-family: var(--corpo-titulo);
+    font-size: 20px;
+    color: var(--branco);
+    text-decoration: none;
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--corpo-titulo);
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.apresentacao__links__link{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-.botao-card{
-    background-color: #531016;
-    width: 150px;
-    height: 30px;
-    border-radius: 30px;
+    gap: 10px;
+    background-color: var(--vermelho);
+    width: 250px;
+    text-align: center;
+    border-radius: 35px;
+    font-size: 20px;
+    padding: 15px 0;
+    text-decoration: none;
     color: var(--branco);
     font-family: var(--corpo-titulo);
-    border: 0px;
-    cursor: pointer;
+    transition: box-shadow 0.3s ease;
 }
+.inicio-fundo{
+    height: 800px;
 
-.card.flip .card-inner {
-    transform: rotateY(180deg);
 }
-
-.front, .back {
-    width: 100%;
-    height: 100%;
+.circulo-titulo{
+    margin-top: 50px;
+    width: 520px;
+    height: 520px;
+    background-color: var(--vermelho);
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-inicio{
+    font-size: 32px;
+}
+.link {
+    text-decoration: none; 
+    color: var(--branco); 
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    font-family: var(--corpo-titulo);
     position: absolute;
-    backface-visibility: hidden;
-}
-
-.front {
-    background-color: var(--vermelho);
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.back {
-    background-color: var(--vermelho);
-    transform: rotateY(180deg);
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.circulo-culinaria{
-    height: auto;
-    margin-left: 850px;
+    bottom: 10px;
 }
