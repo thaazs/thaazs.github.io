@@ -4,6 +4,6 @@ function toggleMenu() {
 }
 
 function rotateCard(button) {
-    const card = button.parentElement.parentElement; // Encontra o elemento 'card' pai do botão clicado
+    const card = button.closest('.card');
     card.classList.toggle('flip');
 }
