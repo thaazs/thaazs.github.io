@@ -65,7 +65,7 @@ h2{
 }
 p{
     font-family: var(--corpo-titulo);
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 20px; 
     margin-right: 25px; 
     margin-bottom: 20px; 
@@ -137,7 +137,6 @@ body{
     margin-right: 20px;
     margin-left: -100px;
     z-index: 100;
-
 }
 .circulo_e img{
     margin-right:50%;
@@ -168,6 +167,9 @@ body{
     font-family: var(--corpo-titulo);
     text-transform: uppercase;
 }
+.apresentacao__links{
+    margin-top: 60px;
+}
 .apresentacao__links__botao{
     display: flex;
     flex-direction: row;
@@ -175,12 +177,12 @@ body{
     align-items: center;
     gap: 20px;
     width: 75%;
-    margin-left: 25px;
+    margin-left: 30px;
 }
 .apresentacao__links__subtitulo{
     font-family: var(--corpo-titulo);
     font-size: 25px;
-    margin-left: 25px;
+    margin-left: 30px;
     margin-top: 10px;
 }
 .apresentacao__links__link{
@@ -203,12 +205,13 @@ body{
     color: var(--vermelho);
 }
 .inicio-fundo{
-    height: 650px;
+    height: 800px;
 
 }
 .circulo-titulo{
-    width: 450px;
-    height: 450px;
+    margin-top: 50px;
+    width: 520px;
+    height: 520px;
     background-color: var(--vermelho);
     border-radius: 50%;
     align-items: center;
@@ -216,10 +219,15 @@ body{
     justify-content: center;
     align-items: center;
 }
+.titulo-inicio{
+    font-size: 32px;
+}
 
 /* conteúdo introdutório */
 #oque{
     margin-top: 85px;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 .oq{
     margin-left: 30px;
@@ -231,24 +239,37 @@ body{
 .oque img {
     margin-right: 10px;
     margin-left: 20px;
-    width: 700px;
+    width: 670px;
     height: auto;
     border-radius: 8%;
 }
 #indioXindigena{
-    background-color: #610e15;
     padding: 10px;
     margin-top: 40px;
 }
-
-/* povos indígena do brasil */
-#pib{
-    margin-top: 50px;
+.indio-indigena{
+    width: 1350px;
+    margin-left: -10px;
 }
-.pib{
-    display: flex;
+.titulo-indio{
+    margin-left: 100px;
+}
+.circulo-indio{
+    margin-top: 50px;
+    width: 750px;
+    height: 750px;
+    background-color: var(--vermelho);
+    border-radius: 50%;
     align-items: center;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: -100px;
+    z-index: 100;
+}
+.texto-circulo-indio{
+    width: 80%;
 }
 
 /* section visao */
@@ -261,10 +282,6 @@ body{
 }
 
 /*links para outras páginas no home*/
-.titulo-paginas{
-    font-family: var(--corpo-titulo);
-    font-size: 24px;
-}
 .paginas {
     margin-left: 4%;
     margin-top: 30px;
@@ -340,4 +357,5 @@ body{
         display: flex;
         height: auto;
     }
+    .
 }
