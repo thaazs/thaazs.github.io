@@ -457,10 +457,6 @@ body{
     }
     .retangulo {
         padding: 10px;
-        width: 200px;
-        height: 250px;
-        margin-bottom: 20px;
-        margin-right: 0px; 
-        margin-left: 18%;
+        margin-left: 10%;
     }
 }
