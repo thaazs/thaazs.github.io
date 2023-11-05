@@ -270,12 +270,45 @@ body{
         height: 200px;
         border-radius: 50%;
     }
+    .circulo img{
+        margin: 0;
+        width: 350px;
+        height: auto;
+        border-radius: 50%;
+        margin-top: 2em;
+    }
+    .circulo {
+        margin-right: 20px;
+        margin-left: 20px;
+        z-index: 100;
+    }
+    .linha{
+        width: 130px;
+    }
     .locais_2{
         display: flex;
         gap: 50px;
         flex-direction: column;
         margin-left: 18%;
         margin-top: 30px;
+    }
+    .demarcacao_img {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .pl_490{
+        flex-direction: column-reverse;
+        margin-top: 40px;
+        background-color: var(--vermelho);
+    }
+    .pl_490 img {
+        border-radius: 8%;
+        width: 350px;
+        height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .titulo_inicio_territorio
         font-family: var(--corpo-titulo);
@@ -289,3 +322,4 @@ body{
         margin-top: 28px;
         width: 90%;
     }
+
