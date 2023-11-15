@@ -249,7 +249,35 @@ body{
     background-position: center;
 }
 /* FIM DO CARD */
-
+@media screen and (max-width: 1300px) {
+    .conteudo{
+        max-width: 95%;
+    }
+    .oque img {
+        width: 550px;
+    }
+    h1{
+        font-size: 23px
+    }
+    p{
+        font-size: 18px;
+    }
+    .circulo_e {
+        margin-left: -20px;
+    }
+    .circulo_e img{
+        width: 650px;
+    }
+    .circulo-culinaria{
+        height: auto;
+        margin-left: 635px;
+    }
+    .circulo-higiene{
+        margin-right: 20px;
+        margin-left: -50px;
+        z-index: 100;
+    }
+}
 @media screen and (max-width: 820px) {
     .conteudo{
         max-width: 95%;
