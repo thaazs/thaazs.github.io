@@ -122,9 +122,10 @@ body{
     margin-left: 43%;
 }
 .circulo img{
-    width: 750px;
+    width: 730px;
     height: auto;
     border-radius: 50%;
+    border: 20px solid var(--vermelho);
 }
 .circulo_e {
     margin-right: 20px;
@@ -134,9 +135,10 @@ body{
 }
 .circulo_e img{
     margin-right:50%;
-    width: 750px;
+    width: 730px;
     height: auto;
     border-radius: 50%;
+    border: 20px solid var(--vermelho);
 }
 /* fim das configurações padroes */
 

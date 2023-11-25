@@ -120,9 +120,10 @@ body{
     margin-right: -5%;
 }
 .circulo img{
-    width: 750px;
+    width: 730px;
     height: auto;
     border-radius: 50%;
+    border: 20px solid var(--vermelho);
 }
 .visao{
     margin-top: 70px;
@@ -139,9 +140,10 @@ body{
 }
 .circulo_e img{
     margin-right:50%;
-    width: 750px;
+    width: 730px;
     height: auto;
     border-radius: 50%;
+    border: 20px solid var(--vermelho);
 }
 /* fim das configurações padrao */
 .inicio_territorio {
@@ -175,24 +177,27 @@ body{
     width: 80%;
 }
 .locais{
-    margin-top: -200px;
+    margin-top: -170px;
     margin-bottom: 80px;
 }
 .locais_1{
     display: flex;
     gap: 50px;
-    margin-left: 7.5%
+    margin-left: 7.5%;
+    margin-bottom: 20px;
 }
 .local1 {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
+    border: 10px solid var(--vermelho);
 }
-.locais_2{
-    display: flex;
-    gap: 50px;
-    margin-left: 20%;
-    margin-top: 25px;
+figcaption{
+    font-family: var(--corpo-titulo);
+    color: var(--branco);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
 }
 .demarcacao-img {
     display: flex;
