@@ -42,9 +42,31 @@
 footer {
     background-color: var(--preto);
     text-align: center;
-    height: 90px;
-    align-items: center;
     margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.redes {
+    color: var(--branco);
+    text-decoration: none;
+    font-family: var(--corpo-titulo);
+    display: flex;
+    align-items: center;
+}
+.social-links img {
+    width: 45px;
+    margin-right: 5px; /* Ajuste este valor conforme necessário */
+}
+.logo img {
+    width: 400px; /* Ajuste este valor conforme necessário */
 }
   
 h1{
@@ -446,6 +468,26 @@ div {
     }
     .espaco-card{
         width: auto;
+    }
+    .social-links {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .redes {
+        color: var(--branco);
+        text-decoration: none;
+        font-family: var(--corpo-titulo);
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+    }
+    .social-links img {
+        width: 25px;
+        margin-right: 5px; 
+    }
+    .logo img {
+        width: 200px; 
     }
    
 }

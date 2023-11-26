@@ -40,14 +40,31 @@ footer {
     text-align: center;
     margin-top: 10px;
     padding: 20px;
-}
-.social-links {
-    float: left;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.redes {
+    color: var(--branco);
+    text-decoration: none;
+    font-family: var(--corpo-titulo);
+    display: flex;
+    align-items: center;
 }
 .social-links img {
-    width: 70px;
+    width: 45px;
+    margin-right: 5px; /* Ajuste este valor conforme necessário */
 }
+.logo img {
+    width: 400px; /* Ajuste este valor conforme necessário */
+}
+
 h1{
     font-family: var(--corpo-titulo);
     font-size: 28px;
@@ -459,24 +476,24 @@ body{
     .indio-indigena{
         width: 106%;
         margin-left: -10px;
-        background-color: var(--vermelho);
+        background-color: var(--vermelho-medio);
     }
     .titulo-indio{
         margin-left: 0px;
-        background-color: var(--vermelho);
+        background-color: var(--vermelho-medio);
     }
     .circulo-indio{
         margin-top: 0px;
         width: 100%;
         height: 100%;
         border-radius: 0%;
-        background-color: var(--vermelho);
+        background-color: var(--vermelho-medio);
         margin-right: 0px;
         margin-left: 0px;
         z-index: 100;
     }
     #indioXindigena{
-        background-color: var(--vermelho);
+        background-color: var(--vermelho-medio);
     }
     .texto-circulo-indio{
         width: 100%;
@@ -512,5 +529,25 @@ body{
         margin-left: 15%;
         margin-right: 10%;
         margin-bottom: 25px;
+    }
+    .social-links {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .redes {
+        color: var(--branco);
+        text-decoration: none;
+        font-family: var(--corpo-titulo);
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+    }
+    .social-links img {
+        width: 25px;
+        margin-right: 5px; 
+    }
+    .logo img {
+        width: 200px; 
     }
 }
