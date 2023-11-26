@@ -7,11 +7,10 @@
     src: url(fontes/TAN_Nimbus/Nimbus.ttf);
 }
   :root {
-    --cinza: #141414;
-    --marrom: #523A2E;
+    --cinza: #141414; 
     --preto: #000000;
-    --verde: #496428;
-    --azul: #346D92; 
+    --vermelho-escuro: #440B0F;
+    --vermelho-medio: #640E15;
     --vermelho: #8B111B;
     --branco: #fafafa;
 
@@ -36,7 +35,7 @@
     margin-top: -15px;
 }
 .titulo_fundo{
-    background-color: var(--vermelho);
+    background-color: var(--vermelho-medio);
     border-radius: 10px;
     padding: 5px;
 }
@@ -89,7 +88,7 @@ body{
     gap: 70px;
     justify-content: center;
     align-items: center; 
-    background-color: var(--preto2);
+    background-color: var(--preto);
     height: 110px; 
 }
 .cabecalho__menu__link{
@@ -123,7 +122,7 @@ body{
     width: 730px;
     height: auto;
     border-radius: 50%;
-    border: 20px solid var(--vermelho);
+    border: 20px solid var(--vermelho-escuro);
 }
 .visao{
     margin-top: 70px;
@@ -143,7 +142,7 @@ body{
     width: 730px;
     height: auto;
     border-radius: 50%;
-    border: 20px solid var(--vermelho);
+    border: 20px solid var(--vermelho-escuro);
 }
 /* fim das configurações padrao */
 .inicio_territorio {
@@ -170,8 +169,8 @@ body{
     border-radius: 10%;
     margin-top: -15px;
 }
-.texto_inicio_territorio{
-    font-size: 30px;
+.texto_inicio_territori{
+    font-size: 25px;
     text-align: center;
     margin-top: 35px;
     width: 80%;
@@ -190,7 +189,7 @@ body{
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    border: 10px solid var(--vermelho);
+    border: 10px solid var(--vermelho-medio);
 }
 figcaption{
     font-family: var(--corpo-titulo);
@@ -212,14 +211,14 @@ figcaption{
 .pl_490{
     display: flex;
     margin-top: 40px;
-    background-color: var(--vermelho);
+    background-color: var(--vermelho-medio);
 }
 .pl__490{
     margin-top: 40px;
-    background-color: var(--vermelho);
+    background-color: var(--vermelho-medio);
 }
 .pl_490 img {
-    border-radius: 8%;
+    border-radius: 4%;
     width: 50%;
     height: auto;
     margin: 30px;

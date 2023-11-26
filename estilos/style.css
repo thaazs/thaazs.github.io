@@ -38,9 +38,15 @@
 footer {
     background-color: var(--preto);
     text-align: center;
-    height: 90px;
-    align-items: center;
     margin-top: 10px;
+    padding: 20px;
+}
+.social-links {
+    float: left;
+    display: flex;
+}
+.social-links img {
+    width: 70px;
 }
 h1{
     font-family: var(--corpo-titulo);
@@ -234,6 +240,13 @@ body{
     height: auto;
     border-radius: 8%;
 }
+.olhos {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #indioXindigena{
     padding: 10px;
     margin-top: 40px;
@@ -302,7 +315,6 @@ body{
 .retangulo img {
     width: 70%; 
     height: 70%; 
-    border-radius: 5%;
 }
 .retangulo:hover{
     opacity: 50%;
@@ -321,7 +333,7 @@ body{
 .link:hover{
     color: #707070;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
     .conteudo{
         max-width: 95%;
     }
@@ -346,7 +358,7 @@ body{
         width: 80%;
     }
     .paginas {
-        margin-left: 4%;
+        margin-left: 2%;
         margin-top: 30px;
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de largura igual */
@@ -363,7 +375,7 @@ body{
         width: 650px;
     }
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 600px) {
     .conteudo{
         max-width: 95%;
     }
@@ -436,7 +448,7 @@ body{
     .oque img {
         margin-right: 10px;
         margin-left: -10px;
-        width: 350px;
+        width: 90%;
         height: auto;
         border-radius: 8%;
     }
@@ -482,7 +494,7 @@ body{
     }
     .circulo_e img{
         margin: 0;
-        width: 350px;
+        width: 340px;
         height: auto;
         border-radius: 50%;
     }
@@ -497,7 +509,8 @@ body{
     }
     .retangulo {
         padding: 10px;
-        margin-left: 10%;
+        margin-left: 15%;
+        margin-right: 10%;
         margin-bottom: 25px;
     }
 }

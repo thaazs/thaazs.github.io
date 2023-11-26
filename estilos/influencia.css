@@ -7,11 +7,10 @@
     src: url(fontes/TAN_Nimbus/Nimbus.ttf);
 }
   :root {
-    --cinza: #141414;
-    --marrom: #523A2E;
+    --cinza: #141414; 
     --preto: #000000;
-    --verde: #496428;
-    --azul: #346D92; 
+    --vermelho-escuro: #440B0F;
+    --vermelho-medio: #640E15;
     --vermelho: #8B111B;
     --branco: #fafafa;
 
@@ -36,7 +35,7 @@
     margin-top: -15px;
 }
 .titulo_fundo{
-    background-color: var(--vermelho);
+    background-color: var(--vermelho-medio);
     border-radius: 10px;
     padding: 5px;
 }
@@ -89,7 +88,7 @@ body{
     gap: 70px;
     justify-content: center;
     align-items: center; 
-    background-color: var(--preto2);
+    background-color: var(--preto);
     height: 110px; 
 }
 .cabecalho__menu__link{
@@ -125,7 +124,7 @@ body{
     width: 730px;
     height: auto;
     border-radius: 50%;
-    border: 20px solid var(--vermelho);
+    border: 20px solid var(--vermelho-escuro);
 }
 .circulo_e {
     margin-right: 20px;
@@ -138,7 +137,7 @@ body{
     width: 730px;
     height: auto;
     border-radius: 50%;
-    border: 20px solid var(--vermelho);
+    border: 20px solid var(--vermelho-escuro);
 }
 /* fim das configurações padroes */
 
@@ -193,7 +192,7 @@ body{
     align-items: center;
 }
 .botao-card{
-    background-color: #531016;
+    background-color: var(--vermelho-medio);
     width: 150px;
     height: 30px;
     border-radius: 30px;
@@ -215,7 +214,7 @@ body{
 }
 
 .front {
-    background-color: var(--vermelho);
+    background-color: var(--vermelho-escuro);
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -224,7 +223,7 @@ body{
 }
 
 .back {
-    background-color: var(--vermelho);
+    background-color: var(--vermelho-escuro);
     transform: rotateY(180deg);
     border-radius: 50%;
     display: flex;

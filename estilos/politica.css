@@ -7,11 +7,10 @@
     src: url(fontes/TAN_Nimbus/Nimbus.ttf);
 }
   :root {
-    --cinza: #141414;
-    --marrom: #523A2E;
+    --cinza: #141414; 
     --preto: #000000;
-    --verde: #496428;
-    --azul: #346D92; 
+    --vermelho-escuro: #440B0F;
+    --vermelho-medio: #640E15;
     --vermelho: #8B111B;
     --branco: #fafafa;
 
@@ -36,7 +35,7 @@
     margin-top: -15px;
 }
 .titulo_fundo{
-    background-color: var(--vermelho);
+    background-color: var(--vermelho-medio);
     border-radius: 10px;
     padding: 5px;
 }
@@ -89,7 +88,7 @@ body{
     gap: 70px;
     justify-content: center;
     align-items: center; 
-    background-color: var(--preto2);
+    background-color: var(--preto);
     height: 110px; 
 }
 .cabecalho__menu__link{
@@ -193,7 +192,7 @@ body{
     align-items: center;
 }
 .botao-card{
-    background-color: #531016;
+    background-color: var(--vermelho-medio);
     width: 150px;
     height: 30px;
     border-radius: 30px;
@@ -215,7 +214,7 @@ body{
 }
 
 .front {
-    background-color: var(--vermelho);
+    background-color: var(--vermelho-escuro);
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -224,7 +223,7 @@ body{
 }
 
 .back {
-    background-color: var(--vermelho);
+    background-color: var(--vermelho-escuro);
     transform: rotateY(180deg);
     border-radius: 50%;
     display: flex;
@@ -243,6 +242,11 @@ body{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .espaco-card{
     width: 80%;
 }
@@ -253,7 +257,6 @@ body{
     width: 100%;
     height: 400px;
 }
-
 .politician-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -263,42 +266,51 @@ body{
 }
 .politician-card {
     text-align: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
-
 .image-container {
     position: relative;
-    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.marcos-circulo{
+    background-position: left;
 }
 .image-container img {
     max-width: 85%;
     height: auto;
-    border-radius: 20px;
+    object-fit: cover;
 }
 .politician-description {
     text-align: left;
     font-family: var(--corpo-titulo);
     font-size: 20px;
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    width: 80%;
-    max-width: 90%;
-    padding: 5px;
-    transform: translateX(-50%);
-    background-color: var(--vermelho);
+    bottom: 0;
+    margin-left: 7.5%;
+    width: 79.5%;
+    padding: 0.8rem;
+    background-color: var(--vermelho-medio);
     color: var(--branco);
-    padding: 8px 16px;
-    border-radius: 8px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    opacity: 1;
+    height: 395;
+    transform: translateY(80%);
+    transition: transform 0.5s ease, opacity 0.5s ease; 
 }
-.image-container:hover .politician-description {
+.politician-card:hover .politician-description {
+    transform: translateY(0);
     opacity: 1;
 }
-.politician-name {
-    font-size: 24px;
-    margin-top: 10px;
+.politician-name{
+    font-size: 25px;
+    margin-top: -3px;
+    text-align: justify;
+    margin-left: 5px;
 }
+
 @media screen and (max-width: 1300px) {
     .conteudo{
         max-width: 95%;
@@ -324,7 +336,7 @@ body{
         margin-left: -45px;
     }
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 600px) {
     .conteudo{
         max-width: 95%;
     }
@@ -430,6 +442,7 @@ body{
         padding: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
+        background-position: center;
     }
     .espaco-card{
         width: auto;

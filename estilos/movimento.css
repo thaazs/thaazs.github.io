@@ -7,11 +7,10 @@
     src: url(fontes/TAN_Nimbus/Nimbus.ttf);
 }
   :root {
-    --cinza: #141414;
-    --marrom: #523A2E;
+    --cinza: #141414; 
     --preto: #000000;
-    --verde: #496428;
-    --azul: #346D92; 
+    --vermelho-escuro: #440B0F;
+    --vermelho-medio: #640E15;
     --vermelho: #8B111B;
     --branco: #fafafa;
 
@@ -145,7 +144,7 @@ body{
     width: 730px;
     height: auto;
     border-radius: 50%;
-    border: 20px solid var(--vermelho);
+    border: 20px solid var(--vermelho-escuro);
 }
 /* fim das configuraçòes padrões */
 .inicio_sobre {
@@ -213,7 +212,7 @@ figcaption{
     width: 225px;
     height: 225px;
     border-radius: 50%;
-    border: 5px solid var(--vermelho);
+    border: 5px solid var(--vermelho-medio);
 }
 .img-movimento{
     margin-top: 30px;
@@ -221,54 +220,89 @@ figcaption{
     width: 100%;
     height: 400px;
 }
-
 .movimento-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
     align-items: center;
+    margin-top: 35px;
 }
 .movimento-card {
     text-align: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
-
 .image-container {
     position: relative;
-    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 .image-container img {
     max-width: 85%;
     height: auto;
-    border-radius: 20px;
+    object-fit: cover;
 }
 .movimento-description {
     text-align: left;
     font-family: var(--corpo-titulo);
     font-size: 20px;
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    width: 80%;
-    max-width: 90%;
-    padding: 5px;
-    transform: translateX(-50%);
-    background-color: var(--vermelho);
+    bottom: 0;
+    margin-left: 7.5%;
+    width: 79.5%;
+    padding: 0.8rem;
+    background-color: var(--vermelho-medio);
     color: var(--branco);
-    padding: 8px 16px;
-    border-radius: 8px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    opacity: 1;
+    transform: translateY(85%);
+    height: 395px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
-.image-container:hover .movimento-description {
+.movimento-card:hover .movimento-description {
+    transform: translateY(0);
     opacity: 1;
 }
 .movimento-name {
-    font-size: 24px;
-    margin-top: 10px;
+    font-size: 25px;
+    margin-top: -3px;
+    text-align: justify;
+    margin-left: 5px;
 }
-
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1300px) {
+    .conteudo{
+        max-width: 95%;
+    }
+    .oque img {
+        width: 550px;
+    }
+    h1{
+        font-size: 23px
+    }
+    p{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .circulo_e {
+        margin-left: -20px;
+    }
+    .circulo_e img{
+        width: 650px;
+    }
+    .integrantes{
+        gap: 20px;
+    }
+    .local1 {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
     .conteudo {
         max-width: 95%;
     }
@@ -324,21 +358,24 @@ figcaption{
         font-size: 20px;
     }
     .pesquisa-mural {
-        width: 100%;
-        margin-left: 0;
+        width: 90%;
+        margin-left: 4.5%;
     }
     .integrantes {
         flex-wrap: wrap;
-        margin-left: 0;
+        margin-left: 15%;
         justify-content: center;
     }
+    figcaption {
+        margin-left: -10px;
+    }
     .local1 {
-        width: 45%;
+        width: 80%;
         height: auto;
         margin-bottom: 20px;
     }
     .image-container img {
-        max-width: 100%;
+        max-width: 80%;
     }
     .movimento-name {
         font-size: 20px;
@@ -346,12 +383,27 @@ figcaption{
     .movimento-description {
         font-size: 16px;
     }
-    .circulo img,
-    .circulo_e img {
-        width: 100%;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
+    .movimento-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .movimento-description{
+        height: 300px;
+        transform: translateY(85%);
+    }
+    .visao_circulo{
+        flex-direction: column;
+    }
+    .circulo_e img{
+        margin: 0;
+        width: 340px;
+        height: auto;
+        border-radius: 50%;
+    }
+    .circulo_e {
+        margin-right: 20px;
+        margin-left: 20px;
+        z-index: 100;
     }
 }
 
