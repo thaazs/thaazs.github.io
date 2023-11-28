@@ -136,6 +136,25 @@ body{
     background-color: var(--preto);
     height: 110px;
 }
+.cabecalho__menu__link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--vermelho-medio);
+    margin-top: 5px;
+    border-radius: 20px;
+    transition: width 0.3s;
+}
+
+.cabecalho__menu__link:hover::after,
+.cabecalho__menu__link.active::after {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
 .circulo {
     height: auto;
     margin-right: -5%;

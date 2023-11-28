@@ -161,6 +161,21 @@ body{
     border-radius: 50%;
     border: 20px solid var(--vermelho-escuro);
 }
+.cabecalho__menu__link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--vermelho-medio);
+    margin-top: 5px;
+    border-radius: 20px;
+    transition: width 0.3s;
+}
+
+.cabecalho__menu__link:hover::after,
+.cabecalho__menu__link.active::after {
+    width: 100%;
+}
 /* fim das configurações padroes */
 
 .inicio_influencias {
