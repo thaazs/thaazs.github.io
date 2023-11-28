@@ -359,13 +359,13 @@ body{
     }
     .circulo_e img{
         margin: 0;
-        width: 350px;
+        width: 90%;
         height: auto;
         border-radius: 50%;
     }
     .circulo_e {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
         z-index: 100;
     }
     .img-celular-socio{
@@ -374,8 +374,8 @@ body{
         background-image: url(imgs/home/img2.jpg);
     }
     .card {
-        width: 400px;
-        height: 400px;
+        width: 380px;
+        height: 380px;
         border-radius: 50%;
     }
     .botao-card{
@@ -390,17 +390,17 @@ body{
     }
     .circulo-culinaria{
         height: auto;
-        margin-left: -10%;
+        margin-left: -35px;
         margin-right: 0px;
     }
     .circulo-higiene{
         height: auto;
-        margin-left: -10%;
+        margin-left: -35px;
         margin-right: 0px;
     }
     .texto-card-socio{
         width: 85%;
-        font-size: 15px;
+        font-size: 13px;
     }
     .social-links {
         display: flex;

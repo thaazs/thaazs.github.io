@@ -335,14 +335,14 @@ figcaption{
     }
     .circulo img{
         margin: 0;
-        width: 350px;
+        width: 90%;
         height: auto;
         border-radius: 50%;
         margin-top: 2em;
     }
     .circulo {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
         z-index: 100;
     }
     .linha{
@@ -361,14 +361,23 @@ figcaption{
         align-items: center;
         margin-bottom: 50px;
     }
+    figcaption{
+        font-family: var(--corpo-titulo);
+        color: var(--branco);
+        text-decoration: none;
+        text-align: center;
+        margin-left: -90px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
     .pl_490{
         flex-direction: column-reverse;
         margin-top: 40px;
-        background-color: var(--vermelho);
+        background-color: var(--vermelho-medio);
     }
     .pl_490 img {
         border-radius: 8%;
-        width: 350px;
+        width: 90%;
         height: auto;
         margin-right: 20px;
         margin-left: 20px;

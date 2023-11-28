@@ -1,4 +1,4 @@
-/* CONFIGURAÇÕES PADRÕES E ITENS QUE TEM EM MAIS DE UMA PÁGINA */
+ /* CONFIGURAÇÕES PADRÕES E ITENS QUE TEM EM MAIS DE UMA PÁGINA */
 @font-face {
     font-family: 'raleway';
     src: url(fontes/Raleway/static/Raleway-Medium.ttf);
@@ -392,7 +392,7 @@ body{
         width: 650px;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
     .conteudo{
         max-width: 95%;
     }
@@ -453,7 +453,7 @@ body{
         height: 300px;
     }
     .titulo-inicio{
-        font-size: 26px;
+        font-size: 23px;
     }
     .link {
         font-size: 18px;
@@ -463,9 +463,9 @@ body{
         align-items: center;
     }
     .oque img {
-        margin-right: 10px;
-        margin-left: -10px;
-        width: 90%;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 97%;
         height: auto;
         border-radius: 8%;
     }
@@ -511,13 +511,13 @@ body{
     }
     .circulo_e img{
         margin: 0;
-        width: 340px;
+        width: 90%;
         height: auto;
         border-radius: 50%;
     }
     .circulo_e {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
         z-index: 100;
     }
     .paginas {

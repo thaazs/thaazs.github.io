@@ -365,6 +365,7 @@ figcaption{
     }
     .inicio_sobre {
         height: auto;
+        width: auto;
         padding: 50px 25px;
         text-align: center;
     }
