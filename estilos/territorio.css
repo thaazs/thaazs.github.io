@@ -122,6 +122,7 @@ body{
 .cabecalho__menu__link__img{
     height: 80px;
     width: 100%;
+    margin-left: -100%;
 }
 .menu-icon {
     display: none;
@@ -135,6 +136,7 @@ body{
     align-items: center;
     background-color: var(--preto);
     height: 110px;
+    margin-right: -20%;
 }
 .cabecalho__menu__link::after {
     content: '';
@@ -312,6 +314,9 @@ figcaption{
     }  
     .menu-icon {
         display: block;
+    }
+    .cabecalho__menu__link__img {
+        margin-left: 0px;
     }
     .menu-links {
         display: none;
