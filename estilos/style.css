@@ -398,6 +398,12 @@ body{
     p{
         font-size: 18px;
     }
+    .cabecalho__menu__link__img {
+        margin-left: -40%;
+    }
+    .menu-links {
+        margin-right: 0px;
+    }
     .indio-indigena{
         width: 101.5%;
     }

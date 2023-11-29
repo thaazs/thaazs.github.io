@@ -312,6 +312,12 @@ body{
     .conteudo{
         max-width: 95%;
     }
+    .cabecalho__menu__link__img {
+        margin-left: -40%;
+    }
+    .menu-links {
+        margin-right: 0px;
+    }
     .oque img {
         width: 550px;
     }

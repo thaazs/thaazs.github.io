@@ -381,6 +381,12 @@ div {
     p{
         font-size: 18px;
     }
+    .cabecalho__menu__link__img {
+        margin-left: -40%;
+    }
+    .menu-links {
+        margin-right: 0px;
+    }
     h2{
         font-size: 20px;
     }

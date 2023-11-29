@@ -292,6 +292,12 @@ figcaption{
     .oque img {
         width: 550px;
     }
+    .cabecalho__menu__link__img {
+        margin-left: -40%;
+    }
+    .menu-links {
+        margin-right: 0px;
+    }
     h1{
         font-size: 23px
     }
