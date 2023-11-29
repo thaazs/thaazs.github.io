@@ -34,3 +34,11 @@ links.forEach(function(link) {
         this.classList.add('active');
     });
 });
+
+var btn_BackTop = document.getElementById("btn-voltar");
+
+btn_BackTop.addEventListener("click", function(){
+    window.scrollTo(0, 0);
+
+})
+

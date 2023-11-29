@@ -243,6 +243,25 @@ figcaption{
     font-size: 18px;
     width: 90%;
 }
+.button-top {
+    width: 45px;
+    height: 45px;
+    background-color: var(--vermelho-escuro);
+    position: fixed;
+    left: 100%;
+    top: 100%;
+    z-index: 10000;
+    transform: translate(-100%, -100%);
+    border-radius: 50%;
+    margin: -30px;
+    cursor: pointer;
+    outline: 0;
+    border: 0px;
+}
+.button-top img {
+    width: 50%;
+    filter: invert(100%);
+}
 #participantes {
     margin-top: 85px;
 }
@@ -469,6 +488,13 @@ figcaption{
     .menu-icon {
         display: block;
     }
+    .button-top {
+        position: relative;
+        left: 50%;
+        transform: translate(0, -50%);
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }  
     .cabecalho__menu__link__img {
         margin-left: 0px;
     }
