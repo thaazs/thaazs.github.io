@@ -468,7 +468,7 @@ figcaption{
     }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1100px) {
     .inicio_sobre {
         background-position: center center;
         height: auto; /* Alterando para altura automática */
@@ -477,7 +477,7 @@ figcaption{
     }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1100px) {
     .conteudo{
         max-width: 95%;
     }
