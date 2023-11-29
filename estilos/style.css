@@ -426,6 +426,12 @@ body{
     .circulo_e img{
         width: 650px;
     }
+    .menu-links {
+        margin-right: 0px;
+    }
+    .cabecalho__menu__link__img{
+        margin-left: -40%;
+    }
 }
 @media screen and (max-width: 1100px) {
     .conteudo{

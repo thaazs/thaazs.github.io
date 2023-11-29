@@ -322,6 +322,12 @@ figcaption{
     .locais_2 , .locais_1{
         gap: 45px;
     }
+    .menu-links {
+        margin-right: 0px;
+    }
+    .cabecalho__menu__link__img{
+        margin-left: -40%;
+    }
 }
 @media screen and (max-width: 1100px) {
     .conteudo{

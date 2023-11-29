@@ -315,6 +315,12 @@ body{
     .oque img {
         width: 550px;
     }
+    .menu-links {
+        margin-right: 0px;
+    }
+    .cabecalho__menu__link__img{
+        margin-left: -40%;
+    }
     h1{
         font-size: 23px
     }
