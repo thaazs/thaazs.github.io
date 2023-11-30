@@ -25,9 +25,6 @@ tem menu de contexto
     margin: 0 auto; 
     background-color: var(--cinza); 
 }
-a {
-   text-decoration: none;
-   color: var(--branco);
 }
 tem menu de contexto
 *{
