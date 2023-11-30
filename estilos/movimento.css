@@ -6,8 +6,6 @@
     font-family: 'nimbus';
     src: url(fontes/TAN_Nimbus/Nimbus.ttf);
 } 
- }
-tem menu de contexto
   :root {
     --cinza: #141414; 
     --preto: #000000;
@@ -18,6 +16,11 @@ tem menu de contexto
 
     --fontespeciais: 'nimbus', sans-serif;
     --corpo-titulo: 'raleway', sans-serif;
+      a {
+   text-decoration: none;
+   color: var(--branco);
+}
+tem menu de contexto
 }
 .conteudo {
     max-width: 1350px; 
