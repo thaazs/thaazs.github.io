@@ -9,6 +9,7 @@
   a {
    text-decoration: none;
    color: var(--branco);
+  }
   :root {
     --cinza: #141414; 
     --preto: #000000;
