@@ -6,6 +6,9 @@
     font-family: 'nimbus';
     src: url(fontes/TAN_Nimbus/Nimbus.ttf);
 } 
+  a {
+   text-decoration: none;
+   color: var(--branco);
   :root {
     --cinza: #141414; 
     --preto: #000000;
@@ -16,9 +19,6 @@
 
     --fontespeciais: 'nimbus', sans-serif;
     --corpo-titulo: 'raleway', sans-serif;
-      a {
-   text-decoration: none;
-   color: var(--branco);
 }
 tem menu de contexto
 }
