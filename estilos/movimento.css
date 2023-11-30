@@ -6,6 +6,11 @@
     font-family: 'nimbus';
     src: url(fontes/TAN_Nimbus/Nimbus.ttf);
 }
+   a {
+   text-decoration: none;
+   color: var(--branco);
+}
+tem menu de contexto
   :root {
     --cinza: #141414; 
     --preto: #000000;
