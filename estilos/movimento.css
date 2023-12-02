@@ -5,13 +5,8 @@
 @font-face {
     font-family: 'nimbus';
     src: url(fontes/TAN_Nimbus/Nimbus.ttf);
-} 
-  
-  :root {
-     a {
-   text-decoration: none;
-   color: var(--branco);
 }
+  :root {
     --cinza: #141414; 
     --preto: #000000;
     --vermelho-escuro: #440B0F;
@@ -22,15 +17,10 @@
     --fontespeciais: 'nimbus', sans-serif;
     --corpo-titulo: 'raleway', sans-serif;
 }
-
 .conteudo {
     max-width: 1350px; 
     margin: 0 auto; 
     background-color: var(--cinza); 
-}
-a {
-    text-decoration: none;
-    color: var(--branco);
 }
 *{
     margin: 0;
